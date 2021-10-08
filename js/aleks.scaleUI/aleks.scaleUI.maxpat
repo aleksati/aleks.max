@@ -42,15 +42,15 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-17",
-					"linecount" : 6,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 348.714116811752319, 380.033628463745117, 163.0, 103.0 ],
+					"patching_rect" : [ 348.714116811752319, 380.033628463745117, 166.0, 135.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 132.904605865478516, 63.652694940567017, 458.0, 39.0 ],
-					"text" : "Two ways to dynamically adjust the zoom based on the current MaxMsp window size. I.e resizing max automatically adjust the zoom. "
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 132.000000476837158, 63.652694940567017, 458.0, 55.0 ],
+					"text" : "Two ways to make the zoom in Max automatically scale based on the window size. In other words, resizing the max window will automatically adjust the zoom. "
 				}
 
 			}
