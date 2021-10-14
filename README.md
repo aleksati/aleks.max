@@ -6,6 +6,6 @@ A selection of useful MaxMSP objects and patches
 - [js]
   - aleks.scaleUI - Two ways to make the zoom in Max automatically scale based on the window size. In other words, resizing the max window will automatically adjust the zoom.
 - [jitter]
-  - OpenGL Spectral Iamge Processing - I conducted a small experiment to investigate whether an OpenGL jitter system that generates real-time spectral mean images in Max/MSP/Jitter should do its vector mean calculations on the CPU or the GPU.
+  - OpenGL Spectral Iamge Processing - Two methods for generating cool real-time spectral mean images in Max/MSP/Jitter using OpenGL.
 
 To be continued ...
