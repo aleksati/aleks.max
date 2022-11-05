@@ -8,4 +8,4 @@ A selection of custom and useful MaxMSP objects and patches
   - **aleks.scaleUI** - Two ways to make the zoom in Max automatically scale based on the window size. In other words, resizing the max window will automatically adjust the zoom.
   
 ## jitter
-  - **Motiongrams** - Two methods for generating real-time spectral mean images (Motiongrams) in Max. One of the GPU (openGL) and one of the CPU.
+  - **Motiongrams** - Two ways to generate real-time spectral mean images (motiongrams) in Max. One GPU (openGL) and one CPU version included.
