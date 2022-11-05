@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -92,7 +92,7 @@
 			}
 , 			{
 				"box" : 				{
-					"filename" : "C:/Users/aleks/Documents/GitHub/maxmsp-div/jsui/aleks.multislider/aleks.multislider1.js",
+					"filename" : "C:/Users/aleks/Documents/GitHub/maxmsp-div/src/aleks.multislider/aleks.multislider1.js",
 					"id" : "obj-1",
 					"maxclass" : "jsui",
 					"numinlets" : 1,
@@ -128,7 +128,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "aleks.multislider1.js",
-				"bootpath" : "~/Documents/GitHub/maxmsp-div/jsui/aleks.multislider",
+				"bootpath" : "~/Documents/GitHub/maxmsp-div/src/aleks.multislider",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
