@@ -1,7 +1,5 @@
 A handful of custom made MaxMSP abstractions and patches.
 
-# Abstractions
-
 ## aleks.multiplot
 
 An upgraded and enhanced version of Timothy Place's plot.js built with the [jsui] object.
@@ -9,7 +7,7 @@ An upgraded and enhanced version of Timothy Place's plot.js built with the [jsui
 ## aleks.multislider
 
 ```diff
-Under development...
+! Under development...!
 ```
 
 A modified and customizable version of Max' [multislider] object. Built with the [jsui] object.
