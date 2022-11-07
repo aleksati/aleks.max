@@ -2,12 +2,12 @@
 
 **Type:** Abstraction
 
-A multi-channel Max implementation of the Kuramoto model for synchronizing sine waves. Generate and start an n-number of sine waves at arbitrary times and commence a real-time synchronization process by providing a k-value. The higher the k-value, the quicker the sine waves synchronize.
+A multi-channel Max implementation of the Kuramoto algorithm for synchronizing sine waves. Generate and start an n-number of sine waves at arbitrary times and commence a real-time synchronization process by providing a k-value. The higher the k-value, the quicker the sine waves synchronize.
 
 Thus far, it is restricted to 10 channels.
 
 <p align="left">
- <img src="img/ksync.jpg" width="auto">
+ <img src="img/ksync.png" width="auto">
 </p>
 
 # aleks.gl.motiongram
@@ -45,7 +45,7 @@ Make the zoom in Max automatically scale based on the window size. In other word
 
 Two methods are included.
 
-## aleks.multislider
+# aleks.multislider
 
 **Type:** jsui
 
