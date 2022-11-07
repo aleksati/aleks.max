@@ -2,25 +2,31 @@
 
 **Type:** Abstraction
 
-A multi-channel Max implementation of the Kuramoto algorithm for synchronizing sine waves. Generate and start an n-number of sine waves at arbitrary times and commence a real-time synchronization process by providing a k-value. The higher the k-value, the quicker the sine waves synchronize.
+A multi-channel Max implementation of the Kuramoto algorithm for synchronizing sine waves. The model produces a real-time smooth, scalable and consistent audio-rate syncronization that can have a variety applications in Max.
 
-Thus far, it is restricted to 10 channels.
+Generate and start an n-number of sine waves at arbitrary times and commence the synchronization process by providing a k-value. The higher the k-value, the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels.
 
 <p align="left">
- <img src="img/ksync.png" width="auto">
+ <img src="img/ksync.png" width=600>
 </p>
+
+### Related articles
+
+- [Synchronization of Globally Coupled Nonlinear Oscillators:the Rich Behavior of the Kuramoto Model](http://go.owu.edu/~physics/StudentResearch/2005/BryanDaniels/kuramoto_paper.pdf)
 
 # aleks.gl.motiongram
 
 **Type:** Patches
 
-Generate real-time spectral mean images (motiongrams) with openGL jitter.
+Generate real-time spectral mean images (motiongrams) with openGL jitter. Motiongrams are unique visual representations of motion in videos over time.
 
 Two methods are included. Their use is dependent on whether you want to conduct vector mean calculations on the GPU or CPU. If you want something stable that can accommodate various resolutions, you should go for the CPU version. This is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1). However, if you're only processing relatively low resolution video and want to utilize most of your CPU power elsewhere, you should opt for the GPU version.
 
 <p align="left">
- <img src="img/figure.gif" width=440>
+ <img src="img/figure.gif" width=600>
 </p>
+
+<!-- 440 -->
 
 ### Related applications
 
