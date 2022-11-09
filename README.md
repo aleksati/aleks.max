@@ -4,7 +4,7 @@
 
 A multi-channel Max implementation of the Kuramoto model for synchronizing oscillators. The model produces a smooth, scalable and consistent audio-rate syncronization in real-time that can have a variety applications in Max.
 
-Generate and start an n-number of sine waves at arbitrary times and commence the synchronization process by providing a k-value. The higher the k-value, the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels.
+Specify the number of oscillators and their fundamental frequency as arguments. Then, start the individual sine waves via toggles at arbitrary times and commence the synchronization process by providing a k-value. The higher the k-value (between 0 and 1), the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels.
 
 <p align="left">
  <img src="img/ksync.png" width=600>
@@ -18,7 +18,7 @@ Generate and start an n-number of sine waves at arbitrary times and commence the
 
 **Type:** Patches
 
-Generate real-time spectral mean images (motiongrams) with openGL jitter. Motiongrams are unique visual representations of motion in videos over time.
+Generate real-time spectral mean images (motiongrams) with openGL jitter. Motiongrams are temporal representations of motion in videos over time.
 
 Two methods are included. Their use is dependent on whether you want to conduct vector mean calculations on the GPU or CPU. If you want something stable that can accommodate various resolutions, you should go for the CPU version. This is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1). However, if you're only processing relatively low resolution video and want to utilize most of your CPU power elsewhere, you should opt for the GPU version.
 
