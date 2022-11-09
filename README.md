@@ -2,7 +2,7 @@
 
 **Type:** Abstraction
 
-A multi-channel Max implementation of the Kuramoto algorithm for synchronizing sine waves. The model produces a real-time smooth, scalable and consistent audio-rate syncronization that can have a variety applications in Max.
+A multi-channel Max implementation of the Kuramoto model for synchronizing oscillators. The model produces a smooth, scalable and consistent audio-rate syncronization in real-time that can have a variety applications in Max.
 
 Generate and start an n-number of sine waves at arbitrary times and commence the synchronization process by providing a k-value. The higher the k-value, the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels.
 
