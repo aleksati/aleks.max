@@ -41,7 +41,13 @@ XRAY external package
 
 **Type:** jsui
 
-An upgraded and enhanced version of Timothy Place's plot.js built with the [jsui] object.
+A plotting script for easy visualization of list-based data in Max. The object is an upgraded and enhanced version of Timothy Place's `plot.js` built with the jsui Max object.
+
+Just add lists of numbers, and the diagram will plot them. You can also assign a custom color to your data, design the plotting interface in many cool ways, add axis labels, and write directly to a dictionary.
+
+<p align="left">
+ <img src="img/multiplot.png" width=600>
+</p>
 
 # aleks.scaleUI
 
