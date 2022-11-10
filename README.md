@@ -41,9 +41,9 @@ XRAY external package
 
 **Type:** jsui
 
-An easy-to-use dynamic plotting tool for visualizing list-based data in Max. The object is an upgraded and enhanced version of Timothy Place's `plot.js` built with the jsui Max object.
+An easy-to-use dynamic plotting tool for visualizing lists of numbers in Max. The object is an upgraded and enhanced version of Timothy Place's `plot.js` built with the [jsui] Max object.
 
-When adding lists of numbers the plot object will plot the list numbers on the Y-axis and the list indices on the X-axis. You can also assign a custom color to your list data, design the plotting interface in many cool ways, add axis titles and labels, and write directly to a dictionary. 
+The interface can plot an arbitrary number of lists and will render the content of each list (the number values) on the Y-axis and the list indices on the X-axis. You can also design the plotting interface in many cool ways, assign a custom color to your list data, add axis titles and labels, and write the plotting data directly to a dictionary in a nice format. 
 
 <p align="left">
  <img src="img/multiplot.png" width=600>
