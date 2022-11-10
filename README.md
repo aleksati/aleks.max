@@ -5,7 +5,7 @@
 5. [aleks.multislider](#aleks.multislider)
 
 
-# aleks.ksync
+## aleks.ksync
 
 **Type:** Abstraction
 
@@ -21,7 +21,7 @@ Specify the number of oscillators and their fundamental frequency as object argu
 
 - [Synchronization of Globally Coupled Nonlinear Oscillators:the Rich Behavior of the Kuramoto Model](http://go.owu.edu/~physics/StudentResearch/2005/BryanDaniels/kuramoto_paper.pdf)
 
-# aleks.gl.motiongram
+## aleks.gl.motiongram
 
 **Type:** Patches
 
