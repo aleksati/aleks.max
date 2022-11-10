@@ -1,5 +1,5 @@
 1. [aleks.ksync](#aleksksync)
-2. [aleks.gl.motiongram](#-aleksglmotiongram)
+2. [aleks.gl.motiongram](#aleksglmotiongram)
 3. [aleks.multiplot](#aleksmultiplot)
 4. [aleks.scaleUI](#aleksscaleUI)
 5. [aleks.multislider](#aleksmultislider)
