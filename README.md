@@ -2,7 +2,7 @@
 
 **Type:** Abstraction
 
-A multi-channel Max implementation of the Kuramoto model for synchronizing oscillators. The model produces a smooth, scalable and consistent audio-rate syncronization in real-time.
+A multi-channel DSP Max abstraction for dynamically synchronizing sine waves (oscillators) based on the Kuramoto model. the Kuramoto model describes the synchronization behavior of a generalized system of interacting oscillators. 
 
 Specify the number of oscillators and their fundamental frequency as object arguments. Then, toggle the various sine waves at arbitrary times via lists of 0's and 1's and commence the synchronization process by providing a k-value. The higher the k-value (between 0 and 1), the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels.
 
