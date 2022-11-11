@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 3607.0, 208.0, 1018.0, 691.0 ],
+		"rect" : [ 3607.0, 208.0, 1018.0, 730.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 532.833333333333485, 197.5, 24.0, 24.0 ]
+					"patching_rect" : [ 532.833333333333485, 207.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -72,7 +72,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 12.0, 72.0, 645.0, 103.0 ],
 					"style" : "helpfile_label",
-					"text" : "A multi-channel Max implementation of the Kuramoto model for synchronizing oscillators. The model produces a smooth, scalable and consistent audio-rate syncronization in real-time that can have a variety applications in Max.\n\nSpecify the number of oscillators and their fundamental frequency as arguments. Then, start the individual sine waves via toggles at arbitrary times and commence the synchronization process by providing a k-value (coupling constant). The higher the k-value (between 0 and 1), the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels."
+					"text" : "A multi-channel DSP Max abstraction for dynamically synchronizing sine waves (oscillators) based on the Kuramoto model. The model describes the synchronization behavior of a generalized system of interacting oscillators.\n\nSpecify the number of oscillators and their fundamental frequency as object arguments. Then, toggle the various sine waves at arbitrary times via lists of 0's and 1's and commence the synchronization process by providing a normalized k-value (coupling constant). The higher this k-value, the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels."
 				}
 
 			}
@@ -83,7 +83,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 517.0, 278.5, 197.0, 48.0 ],
+					"patching_rect" : [ 517.0, 288.5, 197.0, 48.0 ],
 					"text" : "arguments: \n1 - number of oscillators (up to 10)\n2 - fundamental frequency"
 				}
 
@@ -94,7 +94,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 237.0, 338.0, 333.0 ]
+					"patching_rect" : [ 12.0, 247.0, 338.0, 333.0 ]
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 12.0, 197.5, 35.0, 22.0 ],
+					"patching_rect" : [ 12.0, 207.5, 35.0, 22.0 ],
 					"text" : "r test"
 				}
 
@@ -116,7 +116,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 370.333333333333485, 339.0, 37.0, 22.0 ],
+					"patching_rect" : [ 370.333333333333485, 349.0, 37.0, 22.0 ],
 					"text" : "s test"
 				}
 
@@ -128,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 594.833333333333485, 230.5, 62.0, 22.0 ],
+					"patching_rect" : [ 594.833333333333485, 240.5, 62.0, 22.0 ],
 					"text" : "prepend k"
 				}
 
@@ -140,7 +140,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 412.833333333333485, 237.0, 139.0, 22.0 ],
+					"patching_rect" : [ 412.833333333333485, 247.0, 139.0, 22.0 ],
 					"text" : "pak 0 0 0 0"
 				}
 
@@ -154,7 +154,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 735.145833333333485, 327.5, 150.0, 22.0 ]
+					"patching_rect" : [ 735.145833333333485, 337.5, 150.0, 22.0 ]
 				}
 
 			}
@@ -169,7 +169,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "multichannelsignal", "float", "int" ],
-					"patching_rect" : [ 651.145833333333485, 373.0, 103.0, 34.0 ],
+					"patching_rect" : [ 651.145833333333485, 383.0, 103.0, 34.0 ],
 					"sig" : 0.0
 				}
 
@@ -180,7 +180,7 @@
 					"maxclass" : "mc.ezdac~",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 412.833333333333485, 636.0, 45.0, 45.0 ]
+					"patching_rect" : [ 412.833333333333485, 652.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -191,7 +191,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 412.833333333333485, 587.0, 140.0, 22.0 ],
+					"patching_rect" : [ 412.833333333333485, 597.0, 140.0, 22.0 ],
 					"text" : "mc.mixdown~ @chans 2"
 				}
 
@@ -204,7 +204,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 412.833333333333485, 373.0, 216.0, 36.0 ],
+					"patching_rect" : [ 412.833333333333485, 383.0, 216.0, 36.0 ],
 					"text" : "mc.poly~ aleks.poly.clickOnPositive 4 @parallel 1"
 				}
 
@@ -218,7 +218,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 412.833333333333485, 433.5, 94.0, 136.0 ],
+					"patching_rect" : [ 412.833333333333485, 443.5, 94.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "mc.live.gain~",
@@ -242,7 +242,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 765.0, 366.0, 156.0, 48.0 ],
+					"patching_rect" : [ 765.0, 376.0, 156.0, 48.0 ],
 					"text" : "normalized offset values between the primary and the other oscillators."
 				}
 
@@ -255,7 +255,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 492.833333333333485, 197.5, 24.0, 24.0 ]
+					"patching_rect" : [ 492.833333333333485, 207.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -267,7 +267,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 452.833333333333485, 197.5, 24.0, 24.0 ]
+					"patching_rect" : [ 452.833333333333485, 207.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -279,7 +279,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 412.833333333333485, 197.5, 24.0, 24.0 ]
+					"patching_rect" : [ 412.833333333333485, 207.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -292,7 +292,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 594.97916666666697, 197.0, 50.0, 22.0 ]
+					"patching_rect" : [ 594.97916666666697, 207.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -303,7 +303,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "multichannelsignal" ],
-					"patching_rect" : [ 412.833333333333485, 291.5, 91.0, 22.0 ],
+					"patching_rect" : [ 412.833333333333485, 301.5, 91.0, 22.0 ],
 					"text" : "aleks.ksync 4 1"
 				}
 
@@ -315,7 +315,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 672.0, 204.5, 268.0, 48.0 ],
+					"patching_rect" : [ 672.0, 214.5, 268.0, 48.0 ],
 					"text" : "if K is zero, no syncronization occurs. When, coming back to 0, the sine waves will restore original offset values. "
 				}
 
