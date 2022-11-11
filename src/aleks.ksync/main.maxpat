@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 155.0, 94.0, 1018.0, 691.0 ],
+		"rect" : [ 3607.0, 208.0, 1018.0, 691.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -72,7 +72,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 12.0, 72.0, 645.0, 103.0 ],
 					"style" : "helpfile_label",
-					"text" : "A multi-channel Max implementation of the Kuramoto model for synchronizing oscillators. The model produces a smooth, scalable and consistent audio-rate syncronization in real-time that can have a variety applications in Max.\n\nSpecify the number of oscillators and their fundamental frequency as arguments. Then, start the individual sine waves via toggles at arbitrary times and commence the synchronization process by providing a k-value. The higher the k-value (between 0 and 1), the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels."
+					"text" : "A multi-channel Max implementation of the Kuramoto model for synchronizing oscillators. The model produces a smooth, scalable and consistent audio-rate syncronization in real-time that can have a variety applications in Max.\n\nSpecify the number of oscillators and their fundamental frequency as arguments. Then, start the individual sine waves via toggles at arbitrary times and commence the synchronization process by providing a k-value (coupling constant). The higher the k-value (between 0 and 1), the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels."
 				}
 
 			}
@@ -160,7 +160,6 @@
 			}
 , 			{
 				"box" : 				{
-					"displaychan" : 3,
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -171,7 +170,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "multichannelsignal", "float", "int" ],
 					"patching_rect" : [ 651.145833333333485, 373.0, 103.0, 34.0 ],
-					"sig" : [ 0.0, 0.0, 0.0 ]
+					"sig" : 0.0
 				}
 
 			}
@@ -453,56 +452,56 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Woodblock.wav",
-				"bootpath" : "~/Documents/Max 8/Library/Old/Skolearbeid/Monophonic synthesizer",
-				"patcherrelativepath" : "../../../../Max 8/Library/Old/Skolearbeid/Monophonic synthesizer",
+				"bootpath" : "~/OneDrive - Universitetet i Oslo/Documents/Max 8/Library/Old/Skolearbeid/Monophonic synthesizer",
+				"patcherrelativepath" : "../../../../OneDrive - Universitetet i Oslo/Documents/Max 8/Library/Old/Skolearbeid/Monophonic synthesizer",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.calcOffset.gendsp",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.ksync.maxpat",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.kuramotoSyncForFour.gendsp",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.poly.calcOffset.maxpat",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.poly.clickOnPositive.maxpat",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.primaryPhasor.gendsp",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.toggles2channels.js",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
