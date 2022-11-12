@@ -4,7 +4,6 @@
 4. [aleks.scaleUI](#aleksscaleUI)
 5. [aleks.multislider](#aleksmultislider)
 
-
 # aleks.ksync
 
 **Type:** Abstraction
@@ -21,16 +20,14 @@ Specify the number of oscillators and their fundamental frequency as object argu
 
 - [Synchronization of Globally Coupled Nonlinear Oscillators:the Rich Behavior of the Kuramoto Model](http://go.owu.edu/~physics/StudentResearch/2005/BryanDaniels/kuramoto_paper.pdf)
 
-# aleks.gl.motiongram
+# aleks.gl.spectral
 
-**Type:** Patches
+Generate/print real-time motiongrams and videograms (spectral mean images) with openGL jitter. These images are temporal representations of motion in videos over time.
 
-Generate real-time spectral mean images (motiongrams and videograms) with openGL jitter. Motiongrams are temporal representations of motion in videos over time.
-
-Two methods are included. Their use is dependent on whether you want to conduct vector mean calculations on the GPU or CPU. If you want something stable that can accommodate various resolutions, you should go for the CPU version. This is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1). However, if you're only processing relatively low resolution video and want to utilize most of your CPU power elsewhere, you should opt for the GPU version.
+Any video source is fine. You can add different noise reduction filters, adjust the brightness, and configure the printing rate. The abstraction uses (and starts) the audio thread for precision printing and timing. Also, via the second abstraction argument, you can specify whether you want to conduct the main vector mean calculations on the GPU or CPU. The CPU version is the default and what's generally recommended (this is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1)).
 
 <p align="left">
- <img src="img/figure.gif" width=600>
+ <img src="img/spectral.png" width=600>
 </p>
 
 <!-- 440 -->
@@ -50,9 +47,9 @@ XRAY external package
 
 An easy-to-use dynamic plotting tool for visualizing lists of numbers in Max. The object is an upgraded and enhanced version of Timothy Place's `plot.js` built with the [jsui] Max object.
 
-To use it, create a [jsui] object in Max and load it with the `aleks.multiplot.js` file. 
+To use it, create a [jsui] object in Max and load it with the `aleks.multiplot.js` file.
 
-The interface can plot an arbitrary number of lists and will render the content of each list (the number values) on the Y-axis and the list indices on the X-axis. You can also design the plotting interface in many cool ways, assign a custom color to your lists, add axis titles and labels, and write the data directly to a Max dictionary. 
+The interface can plot an arbitrary number of lists and will render the content of each list (the number values) on the Y-axis and the list indices on the X-axis. You can also design the plotting interface in many cool ways, assign a custom color to your lists, add axis titles and labels, and write the data directly to a Max dictionary.
 
 <p align="left">
  <img src="img/multiplot.png" width=600>
