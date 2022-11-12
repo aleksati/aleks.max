@@ -22,6 +22,8 @@ Specify the number of oscillators and their fundamental frequency as object argu
 
 # aleks.gl.spectral
 
+**Type:** Abstraction
+
 Generate/print real-time motiongrams and videograms (spectral mean images) with openGL jitter. These images are temporal representations of motion in videos over time.
 
 Any video source is fine. You can add different noise reduction filters, adjust the brightness, and configure the printing rate. The abstraction uses (and starts) the audio thread for precision printing and timing. Also, via the second abstraction argument, you can specify whether you want to conduct the main vector mean calculations on the GPU or CPU. The CPU version is the default and what's generally recommended (this is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1)).
@@ -31,6 +33,10 @@ Any video source is fine. You can add different noise reduction filters, adjust 
 </p>
 
 <!-- 440 -->
+
+### Related articles
+
+- Jensenius, Alexander Refsum (2005). [Developing Tools for Studying Musical Gestures within the Max/MSP/Jitter Environment](https://www.duo.uio.no/handle/10852/26907). Proceedings of the International Computer Music Conference, p. 282-285.
 
 ### Related applications
 
@@ -43,7 +49,7 @@ XRAY external package
 
 # aleks.multiplot.js
 
-**Type:** jsui
+**Type:** jsui file
 
 An easy-to-use dynamic plotting tool for visualizing lists of numbers in Max. The object is an upgraded and enhanced version of Timothy Place's `plot.js` built with the [jsui] Max object.
 
