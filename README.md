@@ -22,8 +22,6 @@ Specify the number of oscillators and their fundamental frequency as object argu
 
 # aleks.gl.spectral
 
-**Type:** Abstraction
-
 Generate/print real-time motiongrams and videograms (spectral mean images) with openGL jitter. These images are temporal representations of motion in videos over time.
 
 Any video source is fine. You can add different noise reduction filters, adjust the brightness, and configure the printing rate. The abstraction uses (and starts) the audio thread for precision printing and timing. Also, via the second abstraction argument, you can specify whether you want to conduct the main vector mean calculations on the GPU or CPU. The CPU version is the default and what's generally recommended (this is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1)).
@@ -63,18 +61,22 @@ The interface can plot an arbitrary number of lists and will render the content 
 
 # aleks.scaleUI
 
-**Type:**
+**Type:** Abstraction
 
-Make the zoom in Max automatically scale based on the window size. In other words, resizing the max window will automatically adjust the zoom. Built with the [js] object.
+Make the patching window Zoom automatically adjust according to the window size. Perfect for standalone Max application builds where you want to feature a dynamic and resizable user interface.
 
-Two methods are included.
+You can choose from two scaling philosophies; "continuous" or "ondemand". The continuous version is built on the scheduling capabilities of the javascript Task object and updates/scales the window size continuously (as a sub-process) when initiated. Specify an update rate and hit start and stop to toggle the continuous updating. On the other hand, the "ondemand" version only updates/scales the window size when it receives a bang.
 
-# aleks.multislider
+<p align="left">
+ <img src="img/scaleui.png" width=600>
+</p>
 
-**Type:** jsui
+# aleks.multislider.js
+
+**Type:** jsui file
 
 ```diff
 ! Under development...!
 ```
 
-A modified and customizable version of Max' [multislider] object. Built with the [jsui] object.
+A modified and customizable version of Max's [multislider] object built with the [jsui] object.
