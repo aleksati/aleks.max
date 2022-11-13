@@ -59,6 +59,9 @@ The interface can plot an arbitrary number of lists and will render the content 
  <img src="img/multiplot.png" width=600>
 </p>
 
+### Related applications 
+- [https://github.com/aleksati/hardanger-fiddle-performance-analysis](Hardanger Fiddle Performance Analysis)
+
 # aleks.scaleui
 
 **Type:** Abstraction
