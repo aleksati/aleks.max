@@ -24,7 +24,7 @@ Specify the number of oscillators and their fundamental frequency as object argu
 
 Generate/print real-time motiongrams and videograms (spectral mean images) with openGL jitter. These images are temporal representations of motion in videos over time.
 
-Any video source is fine. You can add different noise reduction filters, adjust the brightness, and configure the printing rate. The abstraction uses (and starts) the audio thread for precision printing and timing. Also, via the second abstraction argument, you can specify whether you want to conduct the main vector mean calculations on the GPU or CPU. The CPU version is the default and what's generally recommended (this is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1)).
+Any video source is fine. You can add different noise reduction filters, adjust the brightness, and configure the printing rate. The abstraction uses (and starts) the audio thread for precision printing and timing. You can also specify if you want to conduct the main vector mean calculations on the GPU (via [jit.gl.pix]) or CPU (via [xray.jit.mean]). The CPU version is the default and what's generally recommended (this is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1)).
 
 <p align="left">
  <img src="img/spectral.png" width=600>
