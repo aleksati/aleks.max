@@ -60,7 +60,7 @@ The interface can plot an arbitrary number of lists and will render the content 
 </p>
 
 ### Related applications 
-- [https://github.com/aleksati/hardanger-fiddle-performance-analysis](Hardanger Fiddle Performance Analysis)
+- [Hardanger Fiddle Performance Analysis](https://github.com/aleksati/hardanger-fiddle-performance-analysis)
 
 # aleks.scaleui
 
