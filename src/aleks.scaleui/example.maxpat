@@ -40,12 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 376.0, 237.0, 31.0, 20.0 ],
+					"text" : "ms"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-56",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.295502007007599, 273.008357644081116, 75.0, 22.0 ],
+					"patching_rect" : [ 411.295502007007599, 273.008357644081116, 75.0, 22.0 ],
 					"text" : "r toScaleObj"
 				}
 
@@ -89,13 +100,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"linecount" : 8,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 68.0, 585.0, 117.0 ],
+					"patching_rect" : [ 6.0, 68.0, 585.0, 103.0 ],
 					"style" : "helpfile_label",
-					"text" : "Make the patching window Zoom automatically adjust according to the window size. Perfect for standalone Max application builds where you want to feature a dynamic and resizable user interface. \n\nYou can choose from two scaling philosophies; \"continuous\" or \"ondemand\". The continuous version is built on the scheduling capabilities of the javascript Task object and updates/scales the window size continuously (as a sub-process) when initiated. Specify an update rate and hit start and stop to toggle the continuous updating. On the other hand, the \"ondemand\" version only updates/scales the window size when it receives a bang. "
+					"text" : "Make the patching window Zoom automatically adjust according to the window size. Perfect for standalone Max application builds where you want to feature a dynamic and resizable user interface.\n\nYou can choose from two scaling philosophies; \"continuous\" or \"ondemand\". The continuous version reads and updates/scales the window size continuously (as a sub-process) when initiated by a \"start\" message. You can also specify the update rate in ms. The \"ondemand\" version only updates/scales the window size when it receives bangs."
 				}
 
 			}
@@ -213,7 +224,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 400.295502007007599, 320.0, 157.0, 34.0 ],
+					"patching_rect" : [ 398.295502007007599, 320.0, 157.0, 34.0 ],
 					"text" : "arguments: \n1. ondemand or continuous"
 				}
 
@@ -237,7 +248,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.5, 397.094777464866638, 293.0, 34.0 ],
+					"patching_rect" : [ 69.5, 397.094777464866638, 293.0, 34.0 ],
 					"text" : "Hitting reset will set the inital window size from which the zooming/scaling will occur. "
 				}
 

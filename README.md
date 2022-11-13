@@ -1,7 +1,7 @@
 1. [aleks.ksync](#aleksksync)
 2. [aleks.gl.spectral](#aleksglspectral)
 3. [aleks.multiplot.js](#aleksmultiplotjs)
-4. [aleks.scaleUI](#aleksscaleUI)
+4. [aleks.scaleui](#aleksscaleui)
 5. [aleks.multislider](#aleksmultislider)
 
 # aleks.ksync
@@ -59,13 +59,13 @@ The interface can plot an arbitrary number of lists and will render the content 
  <img src="img/multiplot.png" width=600>
 </p>
 
-# aleks.scaleUI
+# aleks.scaleui
 
 **Type:** Abstraction
 
 Make the patching window Zoom automatically adjust according to the window size. Perfect for standalone Max application builds where you want to feature a dynamic and resizable user interface.
 
-You can choose from two scaling philosophies; "continuous" or "ondemand". The continuous version is built on the scheduling capabilities of the javascript Task object and updates/scales the window size continuously (as a sub-process) when initiated. Specify an update rate and hit start and stop to toggle the continuous updating. On the other hand, the "ondemand" version only updates/scales the window size when it receives a bang.
+You can choose from two scaling philosophies; "continuous" or "ondemand". The continuous version reads and updates/scales the window size continuously (as a sub-process) when initiated by a "start" message. You can also specify the update rate in ms. The "ondemand" version only updates/scales the window size when it receives bangs.
 
 <p align="left">
  <img src="img/scaleui.png" width=600>
