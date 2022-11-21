@@ -1,16 +1,16 @@
-1. [aleks.ksync](#aleksksync)
-2. [aleks.gl.spectral](#aleksglspectral)
-3. [aleks.multiplot.js](#aleksmultiplotjs)
-4. [aleks.scaleui](#aleksscaleui)
-5. [aleks.multislider](#aleksmultislider)
+1. [aleks.ksync](#aleksksync) - Syncronize sine waves based on the Kuramoto model
+2. [aleks.gl.spectral](#aleksglspectral) - Real-time motiongrams (spectral mean images) using openGL jitter.
+3. [aleks.multiplot.js](#aleksmultiplotjs) - Plotting tool for visualizing lists in Max.
+4. [aleks.scaleui](#aleksscaleui) - Make the Max patching window automatically adjust Zoom according to the window size.
+5. [aleks.multislider](#aleksmultislider) - A modified and customizable version of Max's multislider object.
 
 # aleks.ksync
 
 **Type:** Abstraction
 
-A multi-channel DSP Max abstraction for dynamically synchronizing sine waves (oscillators) based on the Kuramoto model. The model describes the synchronization behavior of a generalized system of interacting oscillators. See origin paper below.
+A multi-channel DSP Max abstraction for synchronizing n-number of sine waves (oscillators) based on the Kuramoto model. The model describes the synchronization behavior of a generalized system of interacting oscillators.
 
-Specify the number of oscillators and their fundamental frequency as object arguments. Then, toggle the various sine waves at arbitrary times via lists of 0's and 1's and commence the synchronization process by providing a normalized k-value (coupling constant). The higher this k-value, the quicker the synchronization process occurs. Thus far, the abstraction is restricted to a maximum of 10 channels.
+Specify the number of oscillators as the object argument and their fundamental frequency through the first inlet. Then, toggle sine waves at arbitrary times (using sig~ 1's) and commence the synchronization process by providing a normalized k-value (coupling constant). The higher this k-value, the quicker the synchronization process occurs.
 
 <p align="left">
  <img src="img/ksync.png" width=600>
@@ -19,6 +19,10 @@ Specify the number of oscillators and their fundamental frequency as object argu
 ### Related articles
 
 - [Synchronization of Globally Coupled Nonlinear Oscillators:the Rich Behavior of the Kuramoto Model](http://go.owu.edu/~physics/StudentResearch/2005/BryanDaniels/kuramoto_paper.pdf)
+
+### Contributors
+
+- [Balint Laczko](https://github.com/balintlaczko)
 
 # aleks.gl.spectral
 
@@ -59,14 +63,15 @@ The interface can plot an arbitrary number of lists and will render the content 
  <img src="img/multiplot.png" width=600>
 </p>
 
-### Related applications 
+### Related applications
+
 - [Hardanger Fiddle Performance Analysis](https://github.com/aleksati/hardanger-fiddle-performance-analysis)
 
 # aleks.scaleui
 
 **Type:** Abstraction
 
-Make the patching window Zoom automatically adjust according to the window size. Perfect for standalone Max application builds where you want to feature a dynamic and resizable user interface.
+Make the Max patching window automatically adjust Zoom according to the window size. Perfect for standalone Max application builds where you want a dynamic and resizable user interface.
 
 You can choose from two scaling philosophies; "continuous" or "ondemand". The continuous version reads and updates/scales the window size continuously (as a sub-process) when initiated by a "start" message. You can also specify the update rate in ms. The "ondemand" version only updates/scales the window size when it receives bangs.
 
