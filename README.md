@@ -1,7 +1,7 @@
 1. [aleks.ksync](#aleksksync) - Syncronize oscillators with the Kuramoto model
-2. [aleks.gl.spectral](#aleksglspectral) - Real-time motiongrams (spectral mean images) using openGL jitter.
-3. [aleks.multiplot.js](#aleksmultiplotjs) - Plotting tool for visualizing lists in Max.
-4. [aleks.scaleui](#aleksscaleui) - Make the Max patching window automatically adjust Zoom according to the window size.
+2. [aleks.gl.spectral](#aleksglspectral) - Print real-time motiongrams (spectral mean images) using openGL jitter.
+3. [aleks.multiplot.js](#aleksmultiplotjs) - A custom plotting tool for visualizing lists in Max.
+4. [aleks.scaleui](#aleksscaleui) - Make the patching window automatically adjust Zoom according to the window size.
 5. [aleks.multislider](#aleksmultislider) - A modified and customizable version of Max's multislider object.
 
 # aleks.ksync
