@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -61,8 +61,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 1,
+							"minor" : 3,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -417,8 +417,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 1,
+							"minor" : 3,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -571,8 +571,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 1,
+							"minor" : 3,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -875,7 +875,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.0, 77.0, 645.0, 89.0 ],
 					"style" : "helpfile_label",
-					"text" : "A multi-channel DSP Max abstraction for dynamically synchronizing sine waves (oscillators) based on the Kuramoto model. The model describes the synchronization behavior of a generalized system of interacting oscillators.\n\nSpecify the number of oscillators as the object argument and their fundamental frequency through the first inlet. Then, toggle sine waves at arbitrary times (using sig~ 1's) and commence the synchronization process by providing a normalized k-value (coupling constant). The higher this k-value, the quicker the synchronization process occurs."
+					"text" : "A multi-channel DSP Max abstraction for synchronizing n-number of oscillators (sine waves) using the Kuramoto model. The model describes the synchronization behavior of a generalized system of weakly interacting oscillators.\n\nSpecify the number of oscillators as the object argument and their fundamental frequency through the first inlet. Then, toggle sine waves at arbitrary times (using sig~ 1's) and commence the synchronization process by providing a normalized k-value (coupling constant). The higher this k-value, the quicker the synchronization process occurs."
 				}
 
 			}
@@ -1057,14 +1057,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "aleks.ksync.maxpat",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ksync_node.gendsp",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
