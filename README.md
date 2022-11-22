@@ -1,4 +1,4 @@
-1. [aleks.ksync](#aleksksync) - Syncronize sine waves based on the Kuramoto model
+1. [aleks.ksync](#aleksksync) - Syncronize oscillators with the Kuramoto model
 2. [aleks.gl.spectral](#aleksglspectral) - Real-time motiongrams (spectral mean images) using openGL jitter.
 3. [aleks.multiplot.js](#aleksmultiplotjs) - Plotting tool for visualizing lists in Max.
 4. [aleks.scaleui](#aleksscaleui) - Make the Max patching window automatically adjust Zoom according to the window size.
@@ -8,7 +8,7 @@
 
 **Type:** Abstraction
 
-A multi-channel DSP Max abstraction for synchronizing n-number of sine waves (oscillators) based on the Kuramoto model. The model describes the synchronization behavior of a generalized system of interacting oscillators.
+A multi-channel DSP Max abstraction for synchronizing n-number of oscillators (sine waves) using the Kuramoto model. The model describes the synchronization behavior of a generalized system of weakly interacting oscillators.
 
 Specify the number of oscillators as the object argument and their fundamental frequency through the first inlet. Then, toggle sine waves at arbitrary times (using sig~ 1's) and commence the synchronization process by providing a normalized k-value (coupling constant). The higher this k-value, the quicker the synchronization process occurs.
 
