@@ -1,0 +1,117 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 5,
+			"revision" : 6,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 297.0, 98.0, 840.0, 625.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 790.0, 6.0, 28.0, 22.0 ],
+					"text" : "in 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "History offset_prev(0), current_offset(0), accumulator(0), counter(0), kuramoto_offset(0);\r\n\r\n// buffer to store offset seeds\r\nBuffer offset_seeds(\"offset_seeds\");\r\n// buffer to store current offsets\r\nBuffer current_offsets(\"current_offsets\");\r\n// Coupling constant\r\nParam k(0);\r\n// (w) natural frequency of each oscillator\r\nnFreq = in2/samplerate;\r\n\r\n\r\n// save incoming seed to offset seeds\r\nif (change(in)) {\r\n\tpoke(offset_seeds, in, mc_channel - 1);\r\n}\r\n\r\n// calculate offsets\r\nif (mc_channel == 1) {\r\n\tcurrent_offset = offset_prev;\r\n} else {\r\n\tcurrent_offset = offset_prev + peek(offset_seeds, mc_channel-2);\r\n}\r\n\r\n// save to current offsets\r\npoke(current_offsets, current_offset, mc_channel-1);\r\n\r\n// reset the accumulator on every loop start\r\nif (counter == 0) {\r\n\taccumulator = 0;\r\n}\r\n\r\n// accumulate the value for every voice that is NOT this one\r\nif (counter != mc_channel-1) {\r\n\taccumulator += sin(peek(current_offsets, counter) - current_offset);\r\n}\r\n\r\n// increment and wrap loop iterator\r\ncounter += 1;\r\ncounter = counter >= mc_channelcount ? 0 : counter;\r\n\r\n// when a loop has been finished, calculate kuramoto offset\r\nif (counter == 0) {\r\n\tkuramoto_offset = nFreq + current_offset + ((k / mc_channelcount) / samplerate) * accumulator;\r\n}\r\n\r\n\r\n// ...and store the offset without the seed\r\nif (counter == 0) {\r\n\tif (mc_channel == 1) {\r\n\t\toffset_prev = k == 0 ? 0 : kuramoto_offset;\r\n\t} else {\r\n\t\toffset_prev = k == 0 ? 0 : kuramoto_offset - peek(offset_seeds, mc_channel-2);\r\n\t}\r\n}\r\n\r\n// output offset\r\nout = kuramoto_offset;",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "codebox",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 8.0, 41.0, 801.0, 713.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 8.0, 6.0, 28.0, 22.0 ],
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 8.0, 763.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+ ],
+		"autosave" : 0
+	}
+
+}
