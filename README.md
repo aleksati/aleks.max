@@ -8,9 +8,9 @@
 
 **Type:** Abstraction
 
-A multi-channel DSP Max abstraction for synchronizing n-number of oscillators (sine waves) using the Kuramoto model. The model describes the synchronization behavior of a generalized system of weakly interacting oscillators.
+A multi-channel Max-native DSP abstraction for synchronizing n-number of oscillators (sine waves) using the Kuramoto model. The model describes the synchronization behavior of a system of interacting oscillators.
 
-Specify the number of oscillators as the object argument and their fundamental frequency through the first inlet. Then, toggle sine waves at arbitrary times (using sig~ 1's) and commence the synchronization process by providing a normalized k-value (coupling constant). The higher this k-value, the quicker the synchronization process occurs.
+Specify the number of oscillators as the object argument and define their states (on/off) and frequencies as mc.sig~ inputs. Toggle sine waves at arbitrary times and commence the synchronization process by providing a k-value (coupling constant) greater than 0. The higher this k-value, the quicker the synchronization process occurs.
 
 <p align="left">
  <img src="img/ksync.png" width=600>

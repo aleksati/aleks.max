@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 255.0, 139.0, 1125.0, 593.0 ],
+		"rect" : [ 255.0, 97.0, 1125.0, 669.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -189,11 +189,11 @@
 													"box" : 													{
 														"maxclass" : "newobj",
 														"text" : "phasewrap",
+														"numoutlets" : 1,
+														"outlettype" : [ "" ],
 														"id" : "obj-8",
 														"patching_rect" : [ 32.5, 159.599999999999994, 67.0, 22.0 ],
-														"numinlets" : 1,
-														"numoutlets" : 1,
-														"outlettype" : [ "" ]
+														"numinlets" : 1
 													}
 
 												}
@@ -201,11 +201,11 @@
 													"box" : 													{
 														"maxclass" : "newobj",
 														"text" : "* twopi",
+														"numoutlets" : 1,
+														"outlettype" : [ "" ],
 														"id" : "obj-7",
 														"patching_rect" : [ 14.0, 124.199999999999989, 45.0, 22.0 ],
-														"numinlets" : 1,
-														"numoutlets" : 1,
-														"outlettype" : [ "" ]
+														"numinlets" : 1
 													}
 
 												}
@@ -213,10 +213,10 @@
 													"box" : 													{
 														"maxclass" : "newobj",
 														"text" : "out 2 @comment only phasor",
+														"numoutlets" : 0,
 														"id" : "obj-6",
 														"patching_rect" : [ 158.0, 120.199999999999989, 165.0, 22.0 ],
-														"numinlets" : 1,
-														"numoutlets" : 0
+														"numinlets" : 1
 													}
 
 												}
@@ -224,11 +224,11 @@
 													"box" : 													{
 														"maxclass" : "newobj",
 														"text" : "!- 1",
+														"numoutlets" : 1,
+														"outlettype" : [ "" ],
 														"id" : "obj-3",
 														"patching_rect" : [ 53.0, 49.399999999999999, 26.0, 22.0 ],
-														"numinlets" : 1,
-														"numoutlets" : 1,
-														"outlettype" : [ "" ]
+														"numinlets" : 1
 													}
 
 												}
@@ -236,11 +236,11 @@
 													"box" : 													{
 														"maxclass" : "newobj",
 														"text" : "phasor",
+														"numoutlets" : 1,
+														"outlettype" : [ "" ],
 														"id" : "obj-5",
 														"patching_rect" : [ 14.0, 84.799999999999997, 58.0, 22.0 ],
-														"numinlets" : 2,
-														"numoutlets" : 1,
-														"outlettype" : [ "" ]
+														"numinlets" : 2
 													}
 
 												}
@@ -248,11 +248,11 @@
 													"box" : 													{
 														"maxclass" : "newobj",
 														"text" : "in 1",
+														"numoutlets" : 1,
+														"outlettype" : [ "" ],
 														"id" : "obj-1",
 														"patching_rect" : [ 14.0, 14.0, 28.0, 22.0 ],
-														"numinlets" : 0,
-														"numoutlets" : 1,
-														"outlettype" : [ "" ]
+														"numinlets" : 0
 													}
 
 												}
@@ -260,11 +260,11 @@
 													"box" : 													{
 														"maxclass" : "newobj",
 														"text" : "in 2",
+														"numoutlets" : 1,
+														"outlettype" : [ "" ],
 														"id" : "obj-2",
 														"patching_rect" : [ 53.0, 14.0, 28.0, 22.0 ],
-														"numinlets" : 0,
-														"numoutlets" : 1,
-														"outlettype" : [ "" ]
+														"numinlets" : 0
 													}
 
 												}
@@ -272,10 +272,10 @@
 													"box" : 													{
 														"maxclass" : "newobj",
 														"text" : "out 1 @comment phasor times twopi and phasewrapped",
+														"numoutlets" : 0,
 														"id" : "obj-4",
 														"patching_rect" : [ 14.0, 201.0, 309.0, 22.0 ],
-														"numinlets" : 1,
-														"numoutlets" : 0
+														"numinlets" : 1
 													}
 
 												}
@@ -336,7 +336,7 @@
 									"outlettype" : [ "multichannelsignal", "multichannelsignal" ],
 									"patching_rect" : [ 41.0, 177.5, 121.0, 22.0 ],
 									"text" : "mc.gen~ @chans #1",
-									"wrapper_uniquekey" : "u784000251"
+									"wrapper_uniquekey" : "u138000253"
 								}
 
 							}
@@ -502,18 +502,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 776.200000000000045, 290.5, 186.0, 75.0 ],
-					"text" : "I recommend to re-initiate the object when changing  the oscillator frequencies. It can sometimes be a little late with initiating some of the oscillators."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -532,7 +520,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 948.0, 113.0, 108.0, 22.0 ],
-					"text" : "pak 1. 1. 1. 1. 1. 1."
+					"text" : "pak 1. 2. 1. 2. 1. 1."
 				}
 
 			}
@@ -788,7 +776,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.0, 612.0, 338.0, 333.0 ]
+					"patching_rect" : [ 44.0, 79.0, 338.0, 333.0 ]
 				}
 
 			}
@@ -1316,7 +1304,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 438.0, 317.0, 141.0, 22.0 ],
-					"text" : "aleks.ksync-multifreq-2 6"
+					"text" : "aleks.ksync 6"
 				}
 
 			}
@@ -1366,7 +1354,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 689.5, 362.0, 412.5, 362.0, 412.5, 68.0, 53.5, 68.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1569,15 +1556,15 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "aleks.ksync-multifreq-2.maxpat",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync/multi-freq mc version 2",
+				"name" : "aleks.ksync.maxpat",
+				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync/mc version multi-freq",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ksync_node_wfreq-2.gendsp",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync/multi-freq mc version 2",
+				"name" : "ksync_node.gendsp",
+				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync/mc version multi-freq",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
