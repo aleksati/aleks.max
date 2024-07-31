@@ -24,12 +24,14 @@ function getParentPatcher() {
 
 function setWindowSize() {
   var pPatcher = getParentPatcher();
+  //var pPatcher = this.patcher;
   loadSize = pPatcher.wind.size;
 }
 
 // this function is only banged when the current window size has changed
 function bang() {
   var pPatcher = getParentPatcher();
+  //var pPatcher = this.patcher;
   var currentSize = pPatcher.wind.size;
 
   var zoomX = currentSize[0] / loadSize[0];

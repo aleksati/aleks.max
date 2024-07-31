@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -224,7 +224,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 398.295502007007599, 320.0, 157.0, 34.0 ],
+					"patching_rect" : [ 392.0, 320.0, 157.0, 34.0 ],
 					"text" : "arguments: \n1. ondemand or continuous"
 				}
 
@@ -327,21 +327,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "aleks.scalecontinuous.js",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.scaleui",
+				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.scaleUI",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.scaleondemand.js",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.scaleui",
+				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.scaleUI",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aleks.scaleui.maxpat",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.scaleui",
+				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.scaleUI",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
